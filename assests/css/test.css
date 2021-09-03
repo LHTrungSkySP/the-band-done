@@ -313,6 +313,17 @@ html{
     position: relative;
     width: 900px;
     max-width: calc(100% - 32px);
+    animation: modalappear ease 0.4s;
+}
+@keyframes modalappear {
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .modal-heading{
     background-color: #009688;
